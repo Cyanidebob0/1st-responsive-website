@@ -115,3 +115,22 @@ i{
     color: white;
     background-color: black;
 }
+
+#featured{
+    padding: 15vh 13vh; 
+    margin-left: 19vh;
+    
+}
+
+#featured h1{
+    font-size: 8vh;
+    line-height: 1;
+    font-weight: 400;
+}
+
+#featured h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: black 1px;
+
+}
+
