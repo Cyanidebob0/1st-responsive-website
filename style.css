@@ -1,7 +1,22 @@
+
 @font-face {
     font-family: 'Averta CY';
-    src: url('AvertaCY-Regular.ttf') format('truetype');
-    font-weight: normal;
+    src: url('AvertaCY-Light.ttf') format('truetype'); /* Light version */
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta CY';
+    src: url('AvertaCY-Regular.ttf') format('truetype'); /* Regular version */
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta CY';
+    src: url('AvertaCY-Bold.ttf') format('truetype'); /* Bold version */
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -15,6 +30,7 @@
 html, body{
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 #main{
@@ -60,8 +76,8 @@ i{
 
 #home #hero{
     width: 100%;
-    padding: 20vh 13vh; 
-    margin-left: 15vh;
+    padding: 15vh 13vh; 
+    margin-left: 19vh;
     
 }
 
@@ -72,15 +88,30 @@ i{
 }
 
 #hero .inner-hero p{
-    -webkit-text-stroke: 0.1px black;
     color: transparent;
+    -webkit-text-stroke: black 1.4px;
     line-height: 14vh;
-    font-size: 15vh;
+    font-size: 14vh;
     font-weight: 900;
-    letter-spacing: -4px;
+    letter-spacing: -6px;
     
 }
 #hero h1{
     letter-spacing: -2px;
-    font-weight: 100;
+    font-weight: 400;
+}
+
+#home #home-last p{
+    margin-left: 19vh;
+    font-size: 4.1vh;
+    font-weight: 400;
+    width: 100%;
+    padding: 15vh 13vh;
+    letter-spacing: -1.5px;
+    width: 65%;
+}
+
+#home-last p::selection{
+    color: white;
+    background-color: black;
 }
