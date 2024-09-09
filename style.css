@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Averta CY';
+    src: url('AvertaCY-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Averta CY";
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    background-color: white;
+}
+
+#home{
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+#nav{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav img{
+    height : 70px;
+}
+
+#right {
+    display: flex;
+    gap :25px;
+    text-decoration: none;
+    align-items: center;
+}
+
+#nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 3vh;
+}
+
+i{
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+#home #hero{
+    width: 100%;
+    padding: 20vh 13vh; 
+    margin-left: 15vh;
+    
+}
+
+#hero .inner-hero {
+    display: flex;
+    gap:45px;
+    
+}
+
+#hero .inner-hero p{
+    -webkit-text-stroke: 0.1px black;
+    color: transparent;
+    line-height: 14vh;
+    font-size: 15vh;
+    font-weight: 900;
+    letter-spacing: -4px;
+    
+}
+#hero h1{
+    letter-spacing: -2px;
+    font-weight: 100;
+}
