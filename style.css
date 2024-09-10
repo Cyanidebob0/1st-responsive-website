@@ -195,14 +195,14 @@ i{
     letter-spacing: 0;
 }
 
-#btn{
+.btn{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 3vw;
 }
 
-#btn button{
+.btn button{
     font-size: 1vw;
     font-weight: 700;
     width: 200px;  
@@ -248,7 +248,6 @@ i{
 }
 
 #slide .image{
-    /* height:200px; */
     width:100%;
     border-radius:20px ;
     overflow: hidden;
