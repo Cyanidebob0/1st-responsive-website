@@ -98,6 +98,8 @@ i{
     font-size: 15vh;
     font-weight: 900;
     letter-spacing: -6px;
+    cursor:default;
+
     
 }
 #hero h1{
@@ -213,6 +215,8 @@ i{
     line-height: 1;
     letter-spacing: -0.1vh;
     background-color: white;
+    cursor: pointer;
+
 }
 .dev-sec{
     margin-top: 5vw;
@@ -265,6 +269,7 @@ i{
     padding: 10px 10px;
     background-color: #e7e6e6;
     border-radius: 100px;
+    cursor: pointer;
 }
 
 #slide .h{
