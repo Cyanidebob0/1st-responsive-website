@@ -26,6 +26,10 @@
     box-sizing: border-box;
     font-family: "Averta CY";
 }
+*::selection{
+    color: white;
+    background-color: black;
+}
 
 html, body{
     width: 100%;
@@ -76,7 +80,7 @@ i{
 
 #home #hero{
     width: 100%;
-    padding: 15vh 13vh; 
+    padding: 10vw 13vh; 
     margin-left: 19vh;
     
 }
@@ -91,7 +95,7 @@ i{
     color: transparent;
     -webkit-text-stroke: black 1.4px;
     line-height: 14vh;
-    font-size: 14vh;
+    font-size: 15vh;
     font-weight: 900;
     letter-spacing: -6px;
     
@@ -106,31 +110,166 @@ i{
     font-size: 4.1vh;
     font-weight: 400;
     width: 100%;
-    padding: 15vh 13vh;
+    padding: 13vw 13vh;
     letter-spacing: -1.5px;
     width: 65%;
 }
 
-#home-last p::selection{
-    color: white;
-    background-color: black;
-}
+
 
 #featured{
-    padding: 15vh 13vh; 
+    padding: 8vw 13vh; 
     margin-left: 19vh;
     
 }
 
-#featured h1{
+#fheading h1{
     font-size: 8vh;
     line-height: 1;
     font-weight: 400;
 }
 
-#featured h1:nth-child(2){
+#fheading>:nth-child(2){
     color: transparent;
     -webkit-text-stroke: black 1px;
 
 }
 
+.f-images{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height:100vh;
+    padding:0vw 15vw ;
+}
+
+#fleft{
+    width: 45%;
+    height: inherit;
+    overflow: hidden;
+}
+
+#fright{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 45%;
+    height: inherit;
+}
+
+#fright .images{
+    width: 90%;
+    height: 90%;
+    background-color: red;
+}
+
+.fleftelm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:inherit;
+    width: 100%;
+}
+
+.fleftelm h4{
+    text-transform: capitalize;
+    font-size: 1.9vw;
+    font-weight: 400;
+    letter-spacing: -0.1vw;
+
+}
+
+.fleftelm h1{
+    text-transform: capitalize;
+    font-size: 2.7vw;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 1.1vw 0;
+    letter-spacing: -0.1vw;
+}
+
+.fleftelm h3{
+    text-transform: capitalize;
+    font-size: 1.3vw;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+#btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+}
+
+#btn button{
+    font-size: 1vw;
+    font-weight: 700;
+    width: 200px;  
+    height: 50px;
+    padding: 2vh;
+    border: 2px rgb(193, 190, 190) solid;
+    border-radius: 100px;
+    line-height: 1;
+    letter-spacing: -0.1vh;
+    background-color: white;
+}
+.dev-sec{
+    margin-top: 5vw;
+    padding: 8vw 13vh; 
+    margin-left: 19vh;
+    width: 50%;
+    height: inherit;
+
+}
+
+.dev-sec h1{
+    font-size: 4vw;
+    font-weight: 400;
+    line-height: 0.9;
+    letter-spacing: -0.5vh;
+}
+
+.dev-sec p{
+    margin-top: 60px;
+    font-size: 1.3vw;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+#slides{
+    padding: 3vw 13vh; 
+    display: flex;
+    justify-content: space-between;
+}
+
+#slides #slide{
+    width:30%;
+}
+
+#slide .image{
+    /* height:200px; */
+    width:100%;
+    border-radius:20px ;
+    overflow: hidden;
+}
+
+#slide .image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+#slide .tag{
+    width: fit-content;
+    margin: 15px 0;
+    padding: 10px 10px;
+    background-color: #e7e6e6;
+    border-radius: 100px;
+}
+
+#slide .h{
+    font-size: 1.4vw;
+    font-weight: 550;
+    letter-spacing: -1px;
+}
