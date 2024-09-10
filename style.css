@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: 'Averta CY';
-    src: url('AvertaCY-Bold.ttf') format('truetype'); /* Bold version */
+    src: url('AvertaCY-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
@@ -80,7 +80,7 @@ i{
 
 #home #hero{
     width: 100%;
-    padding: 10vw 13vh; 
+    padding: 7vw 13vh; 
     margin-left: 19vh;
     
 }
@@ -102,6 +102,10 @@ i{
 
     
 }
+
+#hero .inner-hero p:hover{
+    color: black;
+}
 #hero h1{
     letter-spacing: -2px;
     font-weight: 400;
@@ -113,14 +117,14 @@ i{
     font-weight: 400;
     width: 100%;
     padding: 13vw 13vh;
-    letter-spacing: -1.5px;
+    letter-spacing: -2px;
     width: 65%;
 }
 
 
 
 #featured{
-    padding: 8vw 13vh; 
+    padding: 6vw 13vh; 
     margin-left: 19vh;
     
 }
