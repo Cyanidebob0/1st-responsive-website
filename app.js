@@ -28,7 +28,7 @@ main.addEventListener("mousemove", (e) => {
 });
 
 
-// Below is the piece of code which i the problem
+// Below is the piece of code which is the problem
 gsap.to(".fleftelm", {
   scrollTrigger: {
     trigger: "#fimages",
@@ -47,7 +47,7 @@ gsap.to(".fleftelm", {
 hero.forEach((ele1) => {
   ele1.addEventListener("mouseenter", (e) => {
     let element = e.target.getAttribute("id");
-    
+    document.querySelector("#cursor").style.backgroundColor="transparent";
     if (element === "overlay1") {
       document.querySelector("#c1").style.color = "black";
       videoElement.src = "0.mp4"; 
@@ -69,6 +69,7 @@ hero.forEach((ele1) => {
 hero.forEach((ele2) => {
   ele2.addEventListener("mouseleave", (e) => {
     let element = e.target.getAttribute("id");
+    document.querySelector("#cursor").style.backgroundColor="black";
 
     if (element === "overlay1") {
       document.querySelector("#c1").style.color = "transparent";
