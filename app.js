@@ -2,6 +2,18 @@ let main = document.querySelector("#main");
 let cursor = document.querySelector("#cursor");
 let hero = document.querySelectorAll(".overlay");
 
+const videoElement = document.createElement('video');
+videoElement.autoplay = true;
+videoElement.muted = true;
+videoElement.loop = true;
+videoElement.style.width = "100%";
+videoElement.style.height = "100%";
+videoElement.style.objectFit = "cover";
+videoElement.style.position = "absolute";  
+videoElement.style.top = "0";  
+videoElement.style.left = "0";  
+videoElement.style.zIndex = "1"; 
+
 
 main.addEventListener("mousemove", (e) => {
   gsap.to(cursor, {
@@ -18,14 +30,18 @@ hero.forEach((ele1) => {
     
     if (element === "overlay1") {
       document.querySelector("#c1").style.color = "black";
+      videoElement.src = "0.mp4"; 
     } else if (element === "overlay2") {
       document.querySelector("#c2").style.color = "black";
+      videoElement.src = "2.mp4"; 
+
     } else {
       document.querySelector("#c3").style.color = "black";
+      videoElement.src = "3.mp4"; 
     }
-
+    cursor.appendChild(videoElement);
     gsap.to(cursor, {
-      scale: 8
+      scale: 10
     });
   });
 });
@@ -45,5 +61,9 @@ hero.forEach((ele2) => {
     gsap.to(cursor, {
       scale: 1
     });
+    while (cursor.firstChild) {
+      cursor.removeChild(cursor.firstChild);
+    }
+    
   });
 });

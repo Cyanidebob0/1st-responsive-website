@@ -39,6 +39,7 @@
     background-color: black;
     position: fixed;
     z-index:9;
+    overflow: hidden;
 }
 
 html, body{
