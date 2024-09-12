@@ -26,18 +26,18 @@ main.addEventListener("mousemove", (e) => {
   });
 });
 
-gsap.to(".fleftelm", {
-  scrollTrigger: {
-    trigger: "#fimages",
-    pin: true,
-    start: "top top",
-    end: "bottom bottom",
-    endTrigger: ".last",
-    scrub: 1,
-  },
-  y: "-300%",
-  ease: Power1,
-});
+// gsap.to(".fleftelm", {
+//   scrollTrigger: {
+//     trigger: "#fimages",
+//     pin: true,
+//     start: "top top",
+//     end: "bottom bottom",
+//     endTrigger: ".last",
+//     scrub: 1,
+//   },
+//   y: "-300%",
+//   ease: Power1,
+// });
 
 
 hero.forEach((ele1) => {
@@ -122,3 +122,51 @@ Bbtn.forEach((ele)=>{
 
   })
 })
+
+
+
+
+
+
+
+
+
+
+function typeEffect(element, speed) {
+  let text = element.innerHTML;
+  element.innerHTML = "";  // Clear the text initially
+  let i = 0;
+
+  // Create and append the cursor
+  let cursor = document.createElement('span');
+  cursor.classList.add('typingCursor');
+  element.appendChild(cursor);
+
+  function type() {
+    if (i < text.length) {
+      cursor.insertAdjacentText('beforebegin', text.charAt(i)); // Insert character before cursor
+      i++;
+      setTimeout(type, speed);
+    }
+    // Cursor will stay in position and continue blinking after typing completes
+  }
+
+  type();
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const element = entry.target.querySelector("p");
+      typeEffect(element, 25);  // Speed of 50 milliseconds per character
+      observer.unobserve(entry.target);  // Stop observing once the typing starts
+    }
+  });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const homeLast = document.getElementById('home-last');
+  observer.observe(homeLast);
+});
+
+

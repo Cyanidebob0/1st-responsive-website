@@ -96,7 +96,7 @@ i{
 
 #home #hero{
     width: 100%;
-    padding: 7vw 13vh; 
+    padding: 6vw 13vh; 
     margin-left: 19vh;
     position:relative
     
@@ -127,7 +127,7 @@ i{
 
 #home #home-last p{
     margin-left: 19vh;
-    font-size: 4.1vh;
+    font-size: 4.5vh;
     font-weight: 400;
     width: 100%;
     padding: 13vw 13vh;
@@ -175,12 +175,14 @@ i{
     align-items: center;
     width: 45%;
     height: inherit;
+    
 }
 
 #fright .images{
     width: 90%;
     height: 90%;
     background-color: red;
+    border-radius:5px;
 }
 
 .fleftelm{
@@ -338,7 +340,23 @@ i{
 
 .blackButton {
     transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.typingCursor {
+    display: inline-block;
+    width: 2px;
+    height: 0.9em;
+    background-color: black;
+    animation: blink 0.7s steps(1) infinite;
+    vertical-align: bottom; 
   }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
   
 
 
