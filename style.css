@@ -86,7 +86,7 @@ html, body{
 
 i{
     margin-right: 10px;
-    font-size: 1.2rem;
+    font-size: 2vw;
 }
 
 
@@ -320,5 +320,14 @@ i{
     z-index:10;
     left: 770px;
 } 
+
+.magnet{
+    transition: transform 0.15s linear;
+}
+
+/* The space class is just to provide space after the last button */
+.space{
+    margin-bottom: 3vw; 
+}
 
 
