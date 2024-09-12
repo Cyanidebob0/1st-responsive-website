@@ -2,6 +2,7 @@ let main = document.querySelector("#main");
 let cursor = document.querySelector("#cursor");
 let hero = document.querySelectorAll(".overlay");
 let Mbtn = document.querySelectorAll(".magnet");
+let Bbtn = document.querySelectorAll(".blackButton")
 
 
 const videoElement = document.createElement('video');
@@ -23,6 +24,19 @@ main.addEventListener("mousemove", (e) => {
     y: e.y,
     duration: 1
   });
+});
+
+gsap.to(".fleftelm", {
+  scrollTrigger: {
+    trigger: "#fimages",
+    pin: true,
+    start: "top top",
+    end: "bottom bottom",
+    endTrigger: ".last",
+    scrub: 1,
+  },
+  y: "-300%",
+  ease: Power1,
 });
 
 
@@ -86,3 +100,25 @@ Mbtn.forEach((btn)=>{
     btn.style.transform="translate(0px, 0px)";
   });
 });
+
+Bbtn.forEach((ele)=>{
+  ele.addEventListener("mouseenter",(e)=>{
+    const val = e.target;
+    val.style.backgroundColor="black";
+    val.style.color="white";
+    cursor.style.opacity = '0'; 
+
+
+  })
+})
+
+Bbtn.forEach((ele)=>{
+  ele.addEventListener("mouseout",(e)=>{
+    const val = e.target;
+    val.style.backgroundColor="white";
+    val.style.color="black";
+    cursor.style.opacity = '1'; 
+    
+
+  })
+})
