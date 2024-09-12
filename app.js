@@ -47,7 +47,7 @@ gsap.to(".fleftelm", {
 hero.forEach((ele1) => {
   ele1.addEventListener("mouseenter", (e) => {
     let element = e.target.getAttribute("id");
-    document.querySelector("#cursor").style.backgroundColor="white";
+    document.querySelector("#cursor").style.backgroundColor="transparent";
     if (element === "overlay1") {
       document.querySelector("#c1").style.color = "black";
       videoElement.src = "0.mp4"; 
