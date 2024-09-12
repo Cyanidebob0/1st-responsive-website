@@ -28,7 +28,7 @@ main.addEventListener("mousemove", (e) => {
 });
 
 
-
+// Below is the piece of code which i the problem
 gsap.to(".fleftelm", {
   scrollTrigger: {
     trigger: "#fimages",
@@ -37,6 +37,7 @@ gsap.to(".fleftelm", {
     end: "bottom bottom",
     endTrigger: ".last",
     scrub: 1,
+    // markers:true,    // use this markes if you want
   },
   y: "-300%",
   ease: Power1,
