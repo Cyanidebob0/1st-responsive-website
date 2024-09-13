@@ -41,6 +41,7 @@ main.addEventListener("mousemove", (e) => {
 //   y: "-300%",
 //   ease: Power1,
 // });
+//so ive commented this out
 
 
 hero.forEach((ele1) => {
