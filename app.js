@@ -61,6 +61,7 @@ hero.forEach((ele1) => {
     cursor.appendChild(videoElement);
     gsap.to(cursor, {
       scale: 10
+      
     });
   });
 });
