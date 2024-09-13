@@ -29,18 +29,18 @@ main.addEventListener("mousemove", (e) => {
 
 
 // Below is the piece of code which is the proble
-gsap.to(".fleftelm", {
-  scrollTrigger: {
-    trigger: "#fimages",
-    pin: true,
-    start: "top top",
-    end: "bottom bottom",
-    endTrigger: ".last",
-    scrub: 1,    // use markers if you want
-  },
-  y: "-300%",
-  ease: Power1,
-});
+// gsap.to(".fleftelm", {
+//   scrollTrigger: {
+//     trigger: "#fimages",
+//     pin: true,
+//     start: "top top",
+//     end: "bottom bottom",
+//     endTrigger: ".last",
+//     scrub: 1,    // use markers if you want
+//   },
+//   y: "-300%",
+//   ease: Power1,
+// });
 
 
 hero.forEach((ele1) => {
