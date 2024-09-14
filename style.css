@@ -1,14 +1,15 @@
-
 @font-face {
     font-family: 'Averta CY';
-    src: url('AvertaCY-Light.ttf') format('truetype'); /* Light version */
+    src: url('AvertaCY-Light.ttf') format('truetype');
+    /* Light version */
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Averta CY';
-    src: url('AvertaCY-Regular.ttf') format('truetype'); /* Regular version */
+    src: url('AvertaCY-Regular.ttf') format('truetype');
+    /* Regular version */
     font-weight: 400;
     font-style: normal;
 }
@@ -20,19 +21,20 @@
     font-style: normal;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Averta CY";
 }
-*::selection{
+
+*::selection {
     color: white;
     background-color: black;
     display: none;
 }
 
-#cursor{
+#cursor {
     opacity: 1;
     transition: opacity 0.3s ease;
     height: 15px;
@@ -40,72 +42,73 @@
     border-radius: 50%;
     background-color: black;
     position: fixed;
-    z-index:9;
+    z-index: 9;
     overflow: hidden;
 }
 
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
 }
 
-#main{
+#main {
     width: 100%;
     background-color: white;
 }
 
-#home{
+#home {
     width: 100%;
     min-height: 100vh;
-    
+
 }
 
-#nav{
+#nav {
     padding: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#nav img{
-    height : 70px;
+#nav img {
+    height: 70px;
 }
 
 #right {
     display: flex;
-    gap :25px;
+    gap: 25px;
     text-decoration: none;
     align-items: center;
 }
 
-#nav a{
+#nav a {
     text-decoration: none;
     color: black;
     font-weight: 400;
     font-size: 3vh;
 }
 
-i{  
-    padding:5px;
+i {
+    padding: 5px;
     margin-right: 10px;
     font-size: 1.5vw;
     border-radius: 5px;
+    cursor:pointer;
 }
 
 
-#home #hero{
+#home #hero {
     width: 100%;
-    padding: 5vw 13vh; 
+    padding: 5vw 13vh;
     margin-left: 19vh;
-    position:relative
-    
+    position: relative
 }
 
 #hero .inner-hero {
     display: flex;
-    gap:45px;
-    
+    gap: 45px;
+
 }
 
 #hero .inner-hero p {
@@ -120,12 +123,12 @@ i{
 }
 
 
-#hero h1{
+#hero h1 {
     letter-spacing: -2px;
     font-weight: 400;
 }
 
-#home #home-last p{
+#home #home-last p {
     margin-left: 19vh;
     font-size: 4.5vh;
     font-weight: 400;
@@ -137,70 +140,70 @@ i{
 
 
 
-#featured{
-    padding: 6vw 13vh; 
+#featured {
+    padding: 6vw 13vh;
     margin-left: 19vh;
-    
+
 }
 
-#fheading h1{
+#fheading h1 {
     font-size: 8vh;
     line-height: 1;
     font-weight: 400;
 }
 
-#fheading>:nth-child(2){
+#fheading>:nth-child(2) {
     color: transparent;
     -webkit-text-stroke: black 1px;
 
 }
 
-#fimages{
+#fimages {
     display: flex;
     justify-content: space-between;
-    width:100%;
-    height:100vh;
-    padding:0vw 15vw ;
+    width: 100%;
+    height: 100vh;
+    padding: 0vw 15vw;
 }
 
-#fleft{
+#fleft {
     width: 45%;
     height: inherit;
     overflow: hidden;
 }
 
-#fright{
+#fright {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 45%;
     height: inherit;
-    
-    
+
+
 }
 
-#fright .images{
+#fright .images {
     width: 90%;
     height: 90%;
     overflow: hidden;
 }
 
-.images image{
+.images image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
 }
 
-.fleftelm{
+.fleftelm {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height:inherit;
+    height: inherit;
     width: 100%;
 }
 
-.fleftelm h4{
+.fleftelm h4 {
     text-transform: capitalize;
     font-size: 1.9vw;
     font-weight: 400;
@@ -208,7 +211,7 @@ i{
 
 }
 
-.fleftelm h1{
+.fleftelm h1 {
     text-transform: capitalize;
     font-size: 2.7vw;
     font-weight: 400;
@@ -217,26 +220,26 @@ i{
     letter-spacing: -0.1vw;
 }
 
-.fleftelm h3{
+.fleftelm h3 {
     text-transform: capitalize;
     font-size: 1.3vw;
     font-weight: 500;
     letter-spacing: 0;
 }
 
-.btn{
-    
+.btn {
+
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 3vw;
 }
 
-.btn button{
-    
+.btn button {
+
     font-size: 1vw;
     font-weight: 700;
-    width: 200px;  
+    width: 200px;
     height: 50px;
     padding: 2vh;
     border: 2px rgb(193, 190, 190) solid;
@@ -247,52 +250,53 @@ i{
     cursor: pointer;
 
 }
-.dev-sec{
+
+.dev-sec {
     margin-top: 5vw;
-    padding: 8vw 13vh; 
+    padding: 8vw 13vh;
     margin-left: 19vh;
     width: 50%;
     height: inherit;
 
 }
 
-.dev-sec h1{
+.dev-sec h1 {
     font-size: 4vw;
     font-weight: 400;
     line-height: 0.9;
     letter-spacing: -0.5vh;
 }
 
-.dev-sec p{
+.dev-sec p {
     margin-top: 60px;
     font-size: 1.3vw;
     font-weight: 500;
     letter-spacing: 0;
 }
 
-#slides{
-    padding: 3vw 13vh; 
+#slides {
+    padding: 3vw 13vh;
     display: flex;
     justify-content: space-between;
 }
 
-#slides #slide{
-    width:30%;
+#slides #slide {
+    width: 30%;
 }
 
-#slide .image{
-    width:100%;
-    border-radius:20px ;
+#slide .image {
+    width: 100%;
+    border-radius: 20px;
     overflow: hidden;
 }
 
-#slide .image img{
-    width:100%;
-    height:100%;
+#slide .image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-#slide .tag{
+#slide .tag {
     width: fit-content;
     margin: 15px 0;
     padding: 10px 10px;
@@ -301,48 +305,49 @@ i{
     cursor: pointer;
 }
 
-#slide .h{
+#slide .h {
     font-size: 1.4vw;
     font-weight: 550;
     letter-spacing: -1px;
 }
 
-.move-vid{
+.move-vid {
     margin: 10px;
 }
 
-#overlay1{
+#overlay1 {
     background-color: transparent;
     height: 120px;
     width: 430px;
     position: absolute;
-    z-index:10;
-} 
+    z-index: 10;
+}
 
-#overlay2{
+#overlay2 {
     background-color: transparent;
     height: 120px;
     width: 250px;
     position: absolute;
-    z-index:10;
+    z-index: 10;
     left: 520px;
-} 
-#overlay3{
+}
+
+#overlay3 {
     background-color: transparent;
     height: 120px;
     width: 430px;
     position: absolute;
-    z-index:10;
-    left: 770px; 
-} 
+    z-index: 10;
+    left: 770px;
+}
 
-.magnet{
+.magnet {
     transition: transform 0.15s linear;
 }
 
 /* The space class is just to provide space after the last button */
-.space{
-    margin-bottom: 3vw; 
+.space {
+    margin-bottom: 3vw;
 }
 
 .blackButton {
@@ -355,15 +360,60 @@ i{
     height: 0.9em;
     background-color: black;
     animation: blink 0.7s steps(1) infinite;
-    vertical-align: bottom; 
-  }
-  
-  @keyframes blink {
-    50% {
-      opacity: 0;
-    }
-  }
-  
-  
+    vertical-align: bottom;
+}
 
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+#sidebar {
+    height: 100%;
+    width: 23%;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: -23%;
+    z-index: 13;
+    padding: 80px 0;
+    
+}
+
+#sidebar h4 {
+    padding: 0.8vw 1vw;
+    font-size: 3vw;
+    font-weight: 400;
+    width: 100%;
+    letter-spacing: -0.2vh;
+    cursor:pointer;
+    border-radius: 10px;
+    
+}
+
+
+#sidebar i {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-size: 2vw;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.cover{
+    width:100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.386);
+    backdrop-filter: blur(7px);
+    z-index:12;
+    
+    
+}
 
