@@ -36,7 +36,10 @@ gsap.to(".fleftelm", {
     start: "top top",
     end: "bottom bottom",
     endTrigger: ".last",
-    scrub: 1,    // use markers if you want
+    scrub: 1,  
+    onenter: () => document.body.style.overflow = 'auto',
+    onLeave: () => document.body.style.overflow = '', 
+    pinspacing: false,
   },
   y: "-300%",
   ease: Power1,
